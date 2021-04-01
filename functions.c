@@ -10,7 +10,7 @@ int read_arr(char *file_name)
    FILE *ft=fopen(file_name,"r");
     if(!ft)
     {
-        printf("error");
+        
         return 0;
         
     } 
