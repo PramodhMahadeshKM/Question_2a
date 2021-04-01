@@ -22,12 +22,13 @@ typedef struct info_t
    char Git_link[100];
 } info_t;
 
-extern info_t *arr;
+extern info_t* arr;
 
 /**
  * @brief This function is to read the csv file
  * 
  * @param file_name name of the csv file to read
+ * @param arr pointer to an array
  * @return int returns 1 on success and 0 on failure
  */
 int read_arr(char* file_name);

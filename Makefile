@@ -10,8 +10,8 @@ UNITY = unity
 $(PROJECT_NAME) : $(SRC) 
 	gcc -I $(INC) -I $(UNITY) $(SRC) -o read_csv.exe
 
-RUN: $(PROJECT_NAME)
+run: $(PROJECT_NAME)
 	$(PROJECT_NAME)
 
-CLEAN:
+clean:
 	del /q *.exe

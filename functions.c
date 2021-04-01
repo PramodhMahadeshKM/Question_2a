@@ -51,6 +51,7 @@ int read_arr(char *file_name)
    
    
     fclose(ft);
+    free(arr);
    
     
 
