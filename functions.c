@@ -51,7 +51,7 @@ int read_arr(char *file_name)
    
    
     fclose(ft);
-    free(arr);
+    
    
     
 
@@ -77,12 +77,7 @@ int sort(info_t *temp)
         return 0;
     }
     qsort(temp, 3, sizeof(info_t), comparator);
-    for (int i = 0; i < 3; i++) {
-        printf("%s",(temp+i)->name);
-        printf("%s",(temp+i)->mail);
-        printf("%s",(temp+i)->Git_link);
-
-    }
+    
     return 1;
 
 }

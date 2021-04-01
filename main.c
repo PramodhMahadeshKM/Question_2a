@@ -18,13 +18,14 @@ void test_empty(void)
 
 int main(void)
 {
-    
-    UNITY_BEGIN();
-    RUN_TEST(test_empty);
-
-    read_arr("database.csv");
+    read_arr("data.csv");
     sort(arr);
     display(arr);
 
+    UNITY_BEGIN();
+    RUN_TEST(test_empty);
+
+    
+    
      return UNITY_END();
 }
